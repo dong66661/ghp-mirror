@@ -1,4 +1,15 @@
 # ghp-mirror
 
-GoldHarvester Pro EA Tier-3 fallback mirror.
-Auto-managed by VPS bot, do not edit manually.
+GoldHarvester Pro EA 的 **Tier-3 容灾镜像**。
+
+主授权服务器: https://ea369.com
+当主域名 + 备用域名全部失效时，EA 客户端会从这里拉取授权状态，
+继续用本地缓存的策略参数运行（72 小时宽限期）。
+
+- 文件名是账号编号的 hash，无法反推真实账号
+- 仅含授权状态(code/expire/签名)，**不含任何策略参数**
+- 每小时由 VPS 自动覆盖一次
+- 最近一次同步: `2026-04-09T04:49:25Z` （UTC）
+- 当前镜像账号数: `53`
+
+误删文件不影响主授权服务器，下个整点会自动恢复。
